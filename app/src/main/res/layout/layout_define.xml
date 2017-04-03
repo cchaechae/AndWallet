@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/ivIcon"/>
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:textSize="25sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/pigBlue"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPrice"
+        android:textSize="25sp"
+        android:paddingTop="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/pigBrown"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBalance"
+        android:textSize="25sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/pigBrown"
+        android:textAlignment="gravity"/>
+
+
+</LinearLayout>

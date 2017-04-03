@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndWallet</string>
+    <string name="title_activity_summary">Show Summary</string>
+    <string name="txtIncome">Income: %1$d $</string>
+    <string name="txtExpense">Expense: %1$d $</string>
+    <string name="txtBalance">Balance: %1$d $</string>
+</resources>

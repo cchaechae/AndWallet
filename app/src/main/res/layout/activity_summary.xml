@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        android:background="@color/titleBlue">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/pinkpig"
+            android:id="@+id/pinkpigView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/brownpig"
+            android:id="@+id/brownpigView"
+            android:layout_below="@+id/pinkpigView"/>
+
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/balance"
+            android:id="@+id/balanceView"
+            android:layout_below="@+id/brownpigView"
+            android:paddingTop="17dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalIncome"
+            android:text="Income"
+            android:textSize="30sp"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@id/pinkpigView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalExpense"
+            android:text="Expense"
+            android:textSize="30sp"
+            android:paddingTop="15dp"
+            android:layout_toRightOf="@id/brownpigView"
+            android:layout_alignTop="@id/brownpigView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalBalance"
+            android:text="Balance"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/balanceView"
+            android:layout_alignTop="@id/balanceView"
+            android:paddingTop="20dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
